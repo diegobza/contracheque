@@ -12,6 +12,13 @@ def p(texto):
 def cpf(cpf):
     return "%s.%s.%s-%s" % (cpf[0:3], cpf[3:6], cpf[6:9], cpf[9:11])
 
+
+def dict_contra(codigo):
+    switcher = {
+        199: 'Vantagens Diversas'
+    }
+    return switcher.get(codigo, "nothing")
+
 Epson = printer.Usb(0x04b8, 0x0e03)
 Epson.charcode('portuguese')
 
@@ -24,19 +31,20 @@ contra = folha.find('contracheques')
 for i in contra:
     if i.attrib.get('matricula') == '00000002':
         print i.attrib
-        Epson.set('center')
+        '''Epson.set('center')
         Epson.image('logo-lajes.png')
         Epson.set('center', '', '', '', 2)
-        Epson.text('PREFEITURA MUNICIPAL DE LAJES\n')
+        p('PREFEITURA MUNICIPAL DE LAJES\n')
         Epson.set('center')
-        Epson.text('CNPJ: 08.113.466/0001-05\n')
+        p('CNPJ: 08.113.466/0001-05\n')
         Epson.set('center', '', 'b')
         p('\nDADOS DO SERVIDOR\n\n')
         Epson.set('left')
-        Epson.text('NOME:       ' +
-                   i.attrib.get('nome').encode('cp860') + '\n')
-        Epson.text('CPF:        ' +
-                   cpf(i.attrib.get('cpf')).encode('cp860') + '\n')
-        Epson.text('MATRICULA:  ' +
-                   i.attrib.get('matricula').encode('cp860') + '\n')
-        Epson.cut()
+        p('NOME:       ' + i.attrib.get('nome') + '\n')
+        p('CPF:        ' + cpf(i.attrib.get('cpf')) + '\n')
+        p('MATRICULA:  ' + i.attrib.get('matricula') + '\n')'''
+        for j in i:
+            codigo = j.attrib.get('codigo')
+            print codigo
+            print dict_contra(codigo)
+        '''Epson.cut()'''
