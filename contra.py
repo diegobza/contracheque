@@ -20,6 +20,11 @@ contra = folha.find('contracheques')
 for i in contra:
     if i.attrib.get('matricula') == '00000002':
         print i.attrib
+        Epson.set('center')
+        Epson.image('logo-lajes.png')
+        Epson.set('center', '', '', '', 2)
+        Epson.text('PREFEITURA MUNICIPAL DE LAJES\n')
+        Epson.set('left')
         Epson.text('NOME:       ' +
                    i.attrib.get('nome').encode('cp860') + '\n')
         Epson.text('CPF:        ' +
