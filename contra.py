@@ -5,6 +5,10 @@ from escpos import *
 import xml.etree.ElementTree as ET
 
 
+def p(texto):
+    Epson.text(texto.encode('cp860'))
+
+
 def cpf(cpf):
     return "%s.%s.%s-%s" % (cpf[0:3], cpf[3:6], cpf[6:9], cpf[9:11])
 
@@ -24,6 +28,10 @@ for i in contra:
         Epson.image('logo-lajes.png')
         Epson.set('center', '', '', '', 2)
         Epson.text('PREFEITURA MUNICIPAL DE LAJES\n')
+        Epson.set('center')
+        Epson.text('CNPJ: 08.113.466/0001-05\n')
+        Epson.set('center', '', 'b')
+        p('\nDADOS DO SERVIDOR\n\n')
         Epson.set('left')
         Epson.text('NOME:       ' +
                    i.attrib.get('nome').encode('cp860') + '\n')
