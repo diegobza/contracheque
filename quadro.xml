@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<remessa>
+  <ano>2015</ano>
+  <mes>07</mes>
+  <quadroFuncional>
+    <servidores>
+      <servidor>
+        <dadosPessoais>
+          <nome>SHOSANNA DREYFUS</nome>
+          <dataNascimento>1923-01-28</dataNascimento>
+          <escolaridade>43</escolaridade>
+          <nomePai>P.</nomePai>
+          <nomeMae>M.</nomeMae>
+          <estadoCivil>50</estadoCivil>
+          <sexo>F</sexo>
+          <pne>N</pne>
+          <cpf>12332100001</cpf>
+          <identidade>1002001-SSP-RN</identidade>
+          <tituloEleitor>001002003002</tituloEleitor>
+          <pisPasep>10000000001</pisPasep>
+          <banco>001</banco>
+          <agencia>1001X</agencia>
+          <conta>100001</conta>
+        </dadosPessoais>
+        <matricula>00000001</matricula>
+        <cargo>00025 - CHEFE DE GABINETE</cargo>
+        <lotacao>08 - SEC MUN DE PLANEJAMENTO E FINANÇAS</lotacao>
+        <dedicacaoExclusiva>S</dedicacaoExclusiva>
+        <dataAdmissao>1990-07-02</dataAdmissao>
+        <cargaHoraria>040</cargaHoraria>
+        <regimeJuridico>11</regimeJuridico>
+        <formaIngresso>20</formaIngresso>
+        <situacaoFuncional>30</situacaoFuncional>
+        <tipoVinculo>71</tipoVinculo>
+      </servidor>
+      <servidor>
+        <dadosPessoais>
+          <nome>ROBERVAL LADRÃO DE CHOCOLATE</nome>
+          <dataNascimento>1990-09-01</dataNascimento>
+          <escolaridade>41</escolaridade>
+          <nomePai>ROBERTO LADRÃO</nomePai>
+          <nomeMae>VALNICE CHOCOLATE</nomeMae>
+          <estadoCivil>53</estadoCivil>
+          <sexo>M</sexo>
+          <pne>N</pne>
+          <cpf>23443200001</cpf>
+          <identidade>1002002-SSP-RN</identidade>
+          <tituloEleitor>001002003001</tituloEleitor>
+          <pisPasep>10000000002</pisPasep>
+          <banco>001</banco>
+          <agencia>1002X</agencia>
+          <conta>100002</conta>
+        </dadosPessoais>
+        <matricula>00000002</matricula>
+        <cargo>00007 - A.S.G</cargo>
+        <lotacao>06 - DEP. DE MANUTENCAO DA EDUCACAO</lotacao>
+        <dedicacaoExclusiva>S</dedicacaoExclusiva>
+        <dataAdmissao>2013-05-01</dataAdmissao>
+        <cargaHoraria>040</cargaHoraria>
+        <regimeJuridico>11</regimeJuridico>
+        <formaIngresso>20</formaIngresso>
+        <situacaoFuncional>30</situacaoFuncional>
+        <tipoVinculo>70</tipoVinculo>
+      </servidor>
+    </servidores>
+  </quadroFuncional>
+</remessa>

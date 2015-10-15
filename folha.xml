@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<remessa>
+  <folhaPagamento
+       tipoFolha="01"
+       mes="07"
+       ano="2015">
+    <contracheques>
+      <contracheque
+           cpf="12332100001"
+           matricula="00000001"
+           nome="SHOSANNA DREYFUS"
+           sequencia="1">
+        <item
+             codigo="199"
+             valor="5000.00"/>
+        <item
+             codigo="202"
+             valor="390.60"/>
+        <item
+             codigo="203"
+             valor="276.00"/>
+        <item
+             codigo="299"
+             valor="21.00"/>
+      </contracheque>
+      <contracheque
+           cpf="23443200001"
+           matricula="00000002"
+           nome="ROBERVAL LADRÃO DE CHOCOLATE"
+           sequencia="2">
+        <item
+             codigo="199"
+             valor="3210.00"/>
+        <item
+             codigo="201"
+             valor="352.00"/>
+        <item
+             codigo="203"
+             valor="87.00"/>
+      </contracheque>
+    </contracheques>
+  </folhaPagamento>
+</remessa>
