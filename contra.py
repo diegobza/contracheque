@@ -40,7 +40,6 @@ def p_items(itens):
         f_val = locale.currency(val, False, True)
 
         espac = 48 - (len(f_cod) + len(f_val))
-        print espac
 
         if espac > 0:
             Epson.set('left')
@@ -76,7 +75,7 @@ folha = root.find('folhaPagamento')
 contra = folha.find('contracheques')
 
 for i in contra:
-    if i.attrib.get('matricula') == '00000001':
+    if i.attrib.get('matricula') == '00000002':
         intro()
         Epson.set('left')
         p('NOME:       ' + i.attrib.get('nome') + '\n')
